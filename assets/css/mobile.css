@@ -179,7 +179,7 @@
   }
   .offer-section1 {
     padding: 0 0px 96px !important;
-    margin-top: -137px;
+    margin-top: 0;
 }
 h1 {
   font-size: 62px;
@@ -681,7 +681,7 @@ display: none;
     position: absolute;
     right: 0px;
     width: 30%;
-    top: 50px;
+    top: 70px;
     z-index: 16;
     padding:0;
     background: var(--e-global-color-accent);
@@ -702,10 +702,10 @@ display: none;
     background:var(--e-global-color-white) !important;
     /* padding: 10px 26px !important; */
   }
-.home-header-section .navbar-nav .active > a {
-  color: var(--e-global-color-accent)!important;
+/*.home-header-section .navbar-nav .active > a {
+  color: #000!important;
   background:var(--e-global-color-white) !important;
-}
+}*/
 .home-header-section1 .navbar-nav li.nav-btn2 a:hover {
   background: var(--e-global-color-white) !important;
   text-transform: uppercase;
@@ -1078,7 +1078,7 @@ h2 {
 }
 .offer-section1 {
   padding: 0 0px 63px !important;
-  margin-top: -137px;
+  margin-top: 0;
 }
 .sencare-section {
   padding: 60px 0;
@@ -2416,7 +2416,7 @@ h2 {
 }
 .offer-section1 {
   padding: 0 0px 50px !important;
-  margin-top: -138px;
+  margin-top: 0;
 }
 
 /* login page */
@@ -2533,7 +2533,7 @@ h2 {
     padding: 0 10px;
   }
   .home-header-section .home-banner-section {
-    padding: 56px 0 70px;
+    padding: 50px 0 0 0;
 }
   .nav-link {
     font-size: 16px;
@@ -2588,6 +2588,7 @@ h2 {
 .offer-section1 h2 {
   margin-bottom: 28px;
   padding: 0 20px;
+  margin-top: 50px;
 }
 .popup-section h2 {
   margin-bottom: 16px;
@@ -2775,11 +2776,12 @@ h2 {
   padding: 60px 0 44px;
 }
 .offer-section .offer-section-box p {
-  padding: 0 22px;
+  padding: 0;
 }
 .offer-section .offer-section-box {
   padding: 30px 25px;
   text-align: center;
+  height: auto;
 }
 /* .offer-section h2 {
   margin-bottom: 20px;
@@ -2961,7 +2963,7 @@ h2 {
   left: 33%;
 }
 .Carousel-Section .carousel-card {
-  padding: 110px 30px 10px;
+  padding: 30px 30px 10px;
 }
 .Carousel-Section .carousel-card .review-section-review-img-1 {
   top: 20px;
@@ -3249,5 +3251,54 @@ h2 {
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+}
+.form-section.image-with-text .right-section {
+  margin-bottom: 25px;
+}
+.form-section .left-section p {
+  text-align: left;
+}
+.icntext-section .bg-image img {
+    height: 450px;
+}
+.icntext-section .icntxt-wrapper h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.icntext-section {
+    margin: 25px 0 25px 0;
+}
+.icntext-section .icntxt-wrapper .icntxt-head p {
+  font-size: 16px!important;
+}
+.frm-heading h2 {
+    font-size: 26px;
+}
+.form-section .left-section p {
+  font-size: 15px !important;
+}
+.pricing-section .pricing-box-bottom .pricing-section-list li {
+    width: 100%;
+}
+.main-header .navbar .navbar-brand img {
+  width: 90px !important;
+}
+.main-header {
+    padding: 0px 0px 0 0px;
+}
+.home-header-section .home-banner-section .home-banner-text h1{
+  font-size: 24px;
+  line-height: 1.2;
+}
+.home-banner-section .banner-container-box .home-banner-text .banner-paragraph {
+    margin-bottom: 5px;
+}
+
+
+.care-section .row:nth-child(even) {
+  flex-direction: column-reverse;
+}
+.care-section .row .content p {
+  margin: 0;
 }
 }
