@@ -258,7 +258,8 @@ a {
     display: inline-block;
     position: absolute;
     top: 100%;
-    left: -0.5em;
+    /*left: -0.5em;*/
+    left:0;
     z-index: 1000;
     font-size: 13px;
     box-sizing: border-box;
@@ -267,6 +268,9 @@ a {
     transform-origin: 0 0;
     transition: transform .14s 0s ease-in-out;
     background: #fff;
+}
+.home-header-section .navbar-light .navbar-nav .nav-link.text-white {
+    color: #000!important;
 }
 .navbar-nav li:hover .service-menu {
     transform: scale(1,1);
