@@ -2927,7 +2927,8 @@ background: #8bc53b;
 .contact-form-section .carousel-card-form .popup-btn button {
   color: var(--e-global-color-white);
   font-weight: bold;
-  background-image: linear-gradient(to right, #fdf1a3 8%, #b68119 58%);
+/*  background-image: linear-gradient(to right, #fdf1a3 8%, #b68119 58%);*/
+background: #8bc53b;
   border-radius: 28px;
   padding: 14px 43px 14px 43px;
   font-size: 14px;
