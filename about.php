@@ -68,7 +68,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-3">
-                    <h2  data-aos="fade-up">Welcome to Sen<span class="support">Care</span></h2>
+                    <h2  data-aos="fade-up">Welcome to Hamilton Society</h2>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                   <div class="popup-btn">
                       <a href="#">About us</a>
@@ -135,7 +135,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                    <div class="service-offer-content"  data-aos="fade-up">
-                    <h2>SenCare<span class="support">Team</span></h2>
+                    <h2>Hamilton Society<span class="support">Team</span></h2>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                    </div>
                     <div class="service-inner">

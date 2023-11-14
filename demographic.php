@@ -27,7 +27,7 @@
         <div class="row align-items-center py-5">
             <div class="col-md-6 mb-4">
                 <div class="lft-image">
-                    <img src="https:./assets/images/1.jpg">
+                    <img src="./assets/images/demog-1-min.jpg">
                 </div>
             </div>
             <div class="col-md-6">
@@ -56,7 +56,7 @@
             </div>
             <div class="col-md-6 mb-4">
                 <div class="lft-image">
-                    <img src="https://homesforthehomeless.info/wp-content/uploads/2018/03/pp.jpg">
+                    <img src="./assets/images/demog-2-min.jpg">
                 </div>
             </div>
         </div>
@@ -64,7 +64,7 @@
         <div class="row align-items-center py-5">
             <div class="col-md-6 mb-4">
                 <div class="lft-image">
-                    <img src="https://homesforthehomeless.info/wp-content/uploads/2018/03/pp.jpg">
+                    <img src="./assets/images/demog-3-min.jpg">
                 </div>
             </div>
             <div class="col-md-6">
@@ -93,7 +93,7 @@
             </div>
         <div class="col-md-6 mb-4">
                 <div class="lft-image">
-                    <img src="https://homesforthehomeless.info/wp-content/uploads/2018/03/pp.jpg">
+                    <img src="./assets/images/demog-4-min.jpg">
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
         <div class="row align-items-center py-5">
             <div class="col-md-6 mb-4">
                 <div class="lft-image">
-                    <img src="https://homesforthehomeless.info/wp-content/uploads/2018/03/pp.jpg">
+                    <img src="./assets/images/demog-5-min.jpg">
                 </div>
             </div>
             <div class="col-md-6">
@@ -129,7 +129,7 @@
             </div>
             <div class="col-md-6 mb-4">
                 <div class="lft-image">
-                    <img src="https://homesforthehomeless.info/wp-content/uploads/2018/03/pp.jpg">
+                    <img src="./assets/images/demog-6-min.jpg">
                 </div>
             </div>
         </div>
