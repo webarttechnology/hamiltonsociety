@@ -77,8 +77,7 @@
                                         </div>
                                     </div>
                                     <figure class="carousel-bottom-fig">
-                                        <!--<img src="assets/images/carousel-bottom-img.png" alt="" class="img-fluid">-->
-                                        <h3>LOGO HERE</h3>
+                                        <img src="assets/images/transparent.png" alt="" class="img-fluid" style="width:200px;">
                                         </figure>
                                 </div>
                             </form>

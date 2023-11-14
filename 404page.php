@@ -20,9 +20,8 @@
   <div class="banner-container-404">
     <div class="about-right-icon position-relative aos-init aos-animate" data-aos="fade-up-right">
         <figure class="sencare-logo-footer">
-            <a class="navbar-brand mr-0 p-0" href="index.html">
-                <h3>LOGO HERE</h3>
-                <!--<img src="assets/images/sencare-logo2.png" alt="" class="img-fluid">-->
+            <a class="navbar-brand mr-0 p-0" href="index.php">
+                <img src="assets/images/transparent.png" alt="" class="img-fluid" style="width:200px;">
                 </a>
         </figure>
     </div>

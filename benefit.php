@@ -27,7 +27,7 @@
 		<div class="row align-items-center mb-5">
 			<div class="col-md-6">
 				<div class="image">
-					<img src="./assets/images/service-offer-left-img.png">
+					<img src="./assets/images/GM-post-178.jpg">
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -44,7 +44,7 @@
 		<div class="row align-items-center mb-5">
 			<div class="col-md-6">
 				<div class="image">
-					<img src="./assets/images/service-offer-left-img.png">
+					<img src="./assets/images/Benefits-of-Live.jpg">
 				</div>
 			</div>
 			<div class="col-md-6">

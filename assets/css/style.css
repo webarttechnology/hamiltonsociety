@@ -2027,6 +2027,12 @@ background: #8bc53b;
   color: var(--e-global-color-primary);
   padding-top: 197px;
 }
+.offer-section .offer-section-box {
+    height: 467px;
+}
+.about-offer-section .offer-section-box {
+    height: auto;
+}
 
 .offer-section1 .offer-section-box {
   background: var(--e-global-color-white);
@@ -2036,7 +2042,7 @@ background: #8bc53b;
   text-align: center;
   border: 1px solid var(--e-global-color-white);
   transition: all 0.3s ease-out;
-  height: 467px;
+  /*height: 467px;*/
 }
 
 .offer-section1 .offer-section-box:hover {
@@ -3715,6 +3721,8 @@ textarea {
   width: 100%;
   border-radius: 12px;
   box-shadow: 0px 6px 38px 0 #dae0e5;
+  height: 500px;
+  object-fit: cover;
 }
 .care-section .content ul {
   display: flex;
