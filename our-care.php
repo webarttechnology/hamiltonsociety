@@ -64,7 +64,7 @@
         <div class="touch-content">
             <h4>Keep in Touch</h4>
             <a href="mailto:twannhamilton@gmail.com">support@hamiltonsocietyhousing.org</a>
-            <p>718-974-4993</p>
+            <p>610-421-1999</p>
         </div>
     </div>
 </section>
