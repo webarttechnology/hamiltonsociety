@@ -1,7 +1,7 @@
-<?php include("header.php") ?>
+<?php include("header2.php") ?>
 
 <!-- BANNER-SECTION -->
-         <div class="home-banner-section overflow-hidden">
+         <div class="home-banner-section overflow-hidden d-none">
             <div class="banner-container-box">
                 <div class="container">
                     <div class="row">
@@ -10,7 +10,7 @@
                                 <h1>Welcome to Hamilton Society</h1>
                                 <p class="banner-paragraph"></p>
                                 <div class="banner-btn discover-btn-banner">
-                                    <a href="about.html" class="text-decoration-none">OUR CARE SERVICES</a>
+                                    <a href="tel:610 421 1999" class="text-decoration-none">Call Us</a>
                                 </div>
                             </div>
                         </div>
@@ -25,54 +25,36 @@
 <section class="image-text-section py-5">
 	<div class="container">
 		<div class="row align-items-center mb-5">
-			<div class="col-md-6">
+			<div class="col-md-6 mb-4">
 				<div class="image">
-					<img src="./assets/images/service-offer-left-img.png">
+					<img src="./assets/images/ed1.jpg">
 				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="content">
-					<h3>Transitional/Low Income Housing</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+					<h3>Empowerment and Education</h3>
+					<p>We believe in empowering our beneficiaries to gain financial independence. Through financial literacy programs and personalized guidance, we aim to equip you with the skills and knowledge to manage your own finances when the time is right.</p>
 					<div class="banner-btn discover-btn-banner">
-                                    <a href="about.html" class="text-decoration-none">OUR CARE SERVICES</a>
+                                    <a href="tel:610 421 1999" class="text-decoration-none">Call Us</a>
                                 </div>
 				</div>
 			</div>
 		</div>
 
 		<div class="row align-items-center mb-5">
-			<div class="col-md-6">
+			<div class="col-md-6 mb-4">
 				<div class="image">
-					<img src="./assets/images/service-offer-left-img.png">
+					<img src="./assets/images/ed2.jpg">
 				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="content">
-					<h3>Transitional/Low Income Housing</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-					<div class="banner-btn discover-btn-banner">
-                                    <a href="about.html" class="text-decoration-none">OUR CARE SERVICES</a>
-                                </div>
-				</div>
-			</div>
-		</div>
+					<h3>Partnering for Success</h3>
+					<p>At Hamilton Society, we value collaboration and transparency. We work closely with you, your caregivers, and other support networks to ensure that your financial management aligns with your unique goals and needs. We are dedicated to building a trusting and respectful relationship with our beneficiaries, placing their best interests at the forefront of everything we do.
 
-		<div class="row align-items-center">
-			<div class="col-md-6">
-				<div class="image">
-					<img src="./assets/images/service-offer-left-img.png">
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="content">
-					<h3>Transitional/Low Income Housing</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+</p>
 					<div class="banner-btn discover-btn-banner">
-                                    <a href="about.html" class="text-decoration-none">OUR CARE SERVICES</a>
+                                    <a href="tel:610 421 1999" class="text-decoration-none">Call Us</a>
                                 </div>
 				</div>
 			</div>

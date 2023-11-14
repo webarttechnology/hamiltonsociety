@@ -1,7 +1,7 @@
-<?php include("header.php") ?>
+<?php include("header2.php") ?>
 
 <!-- BANNER-SECTION -->
-         <div class="home-banner-section overflow-hidden">
+         <div class="home-banner-section overflow-hidden d-none">
             <div class="banner-container-box">
                 <div class="container">
                     <div class="row">
@@ -10,7 +10,7 @@
                                 <h1>Welcome to Hamilton Society</h1>
                                 <p class="banner-paragraph"></p>
                                 <div class="banner-btn discover-btn-banner">
-                                    <a href="about.html" class="text-decoration-none">OUR CARE SERVICES</a>
+                                    <a href="about.html" class="text-decoration-none">Call Us</a>
                                 </div>
                             </div>
                         </div>

@@ -27,8 +27,8 @@
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/mobile.css">
-<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-<link href="../../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/all.min.css">
+<link href="assets/css/aos.css" rel="stylesheet">
 <link href="assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
 <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -42,8 +42,8 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-lg navbar-light p-0">
                         <a class="navbar-brand mr-0" href="index.php">
-                          <!-- <img src="assets/images/sencare-logo2.png" alt="" class="img-fluid"> -->
-                          <h1 style="font-size:30px;color:#fff;margin:0;">LOGO HERE</h1>
+                          <img src="assets/images/transparent.png" alt="" class="img-fluid" style="width:125px;">
+                          <!-- <h1 style="font-size:30px;color:#fff;margin:0;">LOGO HERE</h1> -->
                         </a>
                             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -69,7 +69,8 @@
                                         <li class="nav-item">
                                           <a class="nav-link text-decoration-none navbar-text-color index2-navlink text-white" href="#">Program</a>
                                           <div class="service-menu">
-                                            <a class="dropdown-item" href="housing.php">SHamilton Society Housing Program</a>
+                                            <a class="dropdown-item" href="housing.php">Hamilton Society Housing Program</a>
+                                            <a class="dropdown-item" href="rental.php">Rental Assistance Program</a>
                                             </div>
                                         </li>
                                        <li class="nav-item">
@@ -81,13 +82,14 @@
                                        <li class="nav-item">
                                         <a class="nav-link text-decoration-none navbar-text-color index2-navlink text-white" href="demographic.php">Demographics We Serve</a>
                                    </li>
-                                        <li class="nav-item">
+                                        <!-- <li class="nav-item">
                                           <a class="nav-link text-decoration-none navbar-text-color index2-navlink text-white" href="blog.php">Blog</a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                             </div>
                     </nav>
                 </div>
             </div>
         </header>
+        
          
