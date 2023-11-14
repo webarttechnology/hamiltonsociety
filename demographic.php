@@ -27,7 +27,7 @@
         <div class="row align-items-center py-5">
             <div class="col-md-6 mb-4">
                 <div class="lft-image">
-                    <img src="https://homesforthehomeless.info/wp-content/uploads/2018/03/pp.jpg">
+                    <img src="https:./assets/images/1.jpg">
                 </div>
             </div>
             <div class="col-md-6">

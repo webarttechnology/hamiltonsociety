@@ -25,11 +25,6 @@
                         </h4>
                     </li>
                     <li>
-                        <a href="about.php" class="text-decoration-none footer-link-p">
-                            About us
-                        </a>
-                    </li>
-                    <li>
                         <a href="comming-soon.php" class="text-decoration-none footer-link-p">
                            Comming Soon
                         </a>

@@ -29,33 +29,33 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
                 <div class="offer-section-box">
-                    <div class="offer-section-inner">
+                    <!-- <div class="offer-section-inner">
                         <figure>
                             <img src="assets/images/offer-section-img1.png" alt="" class="img-fluid">
                         </figure>
-                    </div>
+                    </div> -->
                     <h5>We’re here to help</h5>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
                 <div class="offer-section-box">
-                    <div class="offer-section-inner">
+                    <!-- <div class="offer-section-inner">
                         <figure>
                             <img src="assets/images/offer-section-img2.png" alt="" class="img-fluid">
                         </figure>
-                    </div>
+                    </div> -->
                     <h5>Our Mission</h5>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
                 <div class="offer-section-box">
-                    <div class="offer-section-inner">
+                    <!-- <div class="offer-section-inner">
                         <figure>
                             <img src="assets/images/offer-section-img3.png" alt="" class="img-fluid">
                         </figure>
-                    </div>
+                    </div> -->
                     <h5>Careers</h5>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
                 </div>

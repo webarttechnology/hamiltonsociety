@@ -35,7 +35,7 @@
 		<div class="row align-items-center mb-5">
 			<div class="col-md-6 mb-4">
 				<div class="image">
-					<img src="./assets/images/service-offer-left-img.png">
+					<img src="./assets/images/careplanhomehealth-min.jpg">
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -52,7 +52,7 @@
 		<div class="row align-items-center mb-5">
 			<div class="col-md-6">
 				<div class="image">
-					<img src="./assets/images/service-offer-left-img.png">
+					<img src="./assets/images/download-3.jpg">
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -69,7 +69,7 @@
 		<div class="row align-items-center mb-5">
 			<div class="col-md-6 mb-4">
 				<div class="image">
-					<img src="./assets/images/service-offer-left-img.png">
+					<img src="./assets/images/AdobeStock_243447334-2-scaled.jpeg">
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -85,7 +85,7 @@
 		<div class="row align-items-center mb-5">
 			<div class="col-md-6 mb-4">
 				<div class="image">
-					<img src="./assets/images/service-offer-left-img.png">
+					<img src="./assets/images/assisted_living_in_florida.jpg">
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -112,7 +112,7 @@
 		<div class="row align-items-center mb-5">
 			<div class="col-md-6 mb-4">
 				<div class="image">
-					<img src="./assets/images/service-offer-left-img.png">
+					<img src="./assets/images/2018_3$largeimg12.jpg">
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -128,7 +128,7 @@
 		<div class="row align-items-center mb-5">
 			<div class="col-md-6 mb-4">
 				<div class="image">
-					<img src="./assets/images/service-offer-left-img.png">
+					<img src="./assets/images/Senior-and-Elderly-Care.jpg">
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -145,7 +145,7 @@
 		<div class="row align-items-center mb-5">
 			<div class="col-md-6 mb-4">
 				<div class="image">
-					<img src="./assets/images/service-offer-left-img.png">
+					<img src="./assets/images/1-1000x675.png">
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -161,7 +161,7 @@
 		<div class="row align-items-center mb-5">
 			<div class="col-md-6 mb-4">
 				<div class="image">
-					<img src="./assets/images/service-offer-left-img.png">
+					<img src="./assets/images/467305389-1024x683.jpg">
 				</div>
 			</div>
 			<div class="col-md-6">
