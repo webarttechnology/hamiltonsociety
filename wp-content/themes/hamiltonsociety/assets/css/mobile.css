@@ -1630,8 +1630,45 @@ h2 {
 .login-form {
   padding: 70px 0;
 }
+.header .navbar .navbar-nav .nav-link {
+  padding: 10px 0;
 }
-
+.header .navbar .navbar-nav .nav-link .sub-menu {
+    top: 64px;
+    left: 0;
+    width: 100%;
+}
+.header .navbar .navbar-nav #menu-item-9 {
+    overflow: hidden;
+}
+.header .navbar .navbar-nav #menu-item-9.active1 {
+    overflow: visible;
+}
+.header .navbar .navbar-nav #menu-item-10 {
+    overflow: hidden;
+}
+.header .navbar .navbar-nav #menu-item-10.active2 {
+    overflow: visible;
+}
+.header .navbar .navbar-nav .nav-link a {
+  display: flex;
+}
+.header .navbar .navbar-nav .nav-link .sub-menu.active {
+    top: 64px;
+}
+.header .navbar .navbar-nav .nav-link .sub-menu li a {
+  display: contents;
+  font-size: 13px;
+}
+.header .navbar .navbar-nav .nav-link .sub-menu li {
+    padding-left: 10px;
+}
+.home-header-section .navbar-nav li a:hover {
+  background: #8bc53e !important;
+}
+.home-header-section .navbar-nav li a:focus-visible {
+  outline: 0;
+}
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 42px;
@@ -3065,7 +3102,7 @@ h2 {
 }
 .contact-offer-section {
   padding: 0px 0 0px !important;
-  margin-top: -141px;
+/*  margin-top: -141px;*/
 }
 .frequently-asked-section {
   padding:0px 0 0px !important;
@@ -3306,5 +3343,11 @@ h2 {
 }
 .care-section .content ul li {
     width: 100%;
+}
+.form-section .right-section .form-group p .wpcf7-submit {
+    width: 100%;
+}
+.contact-form-section form .carousel-bottom-fig p img {
+  width: 140px!important;
 }
 }

@@ -210,7 +210,7 @@ a {
 }
 
 /* header-banner-section */
-.home-header-section {
+.home .home-header-section {
   background: url(../images/banner2.jpg) !important;
   background-repeat: no-repeat;
   background-size: cover !important;
@@ -3953,4 +3953,112 @@ background: #8bc53b;
   margin-bottom: 25px;
 }
 
+
+.form-section .right-section .form-group p .wpcf7-submit {
+  color: #fff;
+    font-weight: bold;
+     background: var(--e-global-color-accent); 
+    background: #8bc53b;
+    border-radius: 28px;
+    padding: 16px 37px 16px 37px;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+}
+.form-section .right-section .form-group p .wpcf7-submit:hover {
+    color: #000;
+}
+
+
+.contact-form-section form p span input {
+      width: 100%;
+    margin: 0 0 35px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid var(--e-global-color-secondary);
+    padding-bottom: 26px;
+    outline: none;
+}
+.contact-form-section form .border-bottom-outer:first-child p {
+  margin-bottom: 0;
+}
+.contact-form-section form .popup-btn p input{
+  color: #fff;
+    font-weight: bold;
+     background: var(--e-global-color-accent); 
+    background: #8bc53b;
+    border-radius: 28px;
+    padding: 16px 37px 16px 37px;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+    border: none;
+}
+.contact-form-section form .popup-btn .wpcf7-spinner {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.contact-form-section form .popup-btn p input:hover {
+  color: #000;
+}
+.contact-form-section form .popup-btn p {
+  position: relative;
+}
+
+
+
+.header .navbar .navbar-nav .nav-link a {
+  color: #000;
+}
+.home .header .navbar .navbar-nav .nav-link a {
+  color: #fff;
+}
+.home .header .navbar .navbar-nav .nav-link .sub-menu .menu-item a {
+  color: #000;
+}
+.home .header .navbar .navbar-nav .nav-link .sub-menu .menu-item:hover a {
+  color: #fff;
+}
+.header .navbar .navbar-nav .nav-link {
+  position: relative;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+}
+.header .navbar .navbar-nav .nav-link .sub-menu {
+  position: absolute;
+/*  bottom: -128px;*/
+top: 35px;
+  left: 10px;
+  padding: 0;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  transition: all .3s ease-in-out;
+/*  height: 175px;*/
+  width: 304px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 1;
+}
+.header .navbar .navbar-nav .nav-link .sub-menu li {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+}
+.header .navbar .navbar-nav .nav-link:hover {
+  overflow: visible;
+}
+.header .navbar .navbar-nav .nav-link .sub-menu li:hover {
+  background: #8bc53b;
+}
+.header .navbar .navbar-nav .nav-link .sub-menu li:hover a {
+  color: #fff;
+}
+.header .navbar .navbar-nav .nav-link .sub-menu li a {
+  padding: 0 10px;
+}
 

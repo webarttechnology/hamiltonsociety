@@ -145,19 +145,38 @@
     </div>
     </div>
 </div>
-    <script src="assets/js/jquery-1.12.1.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-1.12.1.min.js"></script>
     
-    <script> $(document).ready(function(){
+    
+    <!-- <script> 
+        $(document).ready(function(){
     
       $('.index2-navlink').click(function(){
-    //   $('.service-menu').animate({height:'0px'}, 500);
+      $('.service-menu').animate({height:'0px'}, 500);
     
     $('.service-menu').toggle();
    });
    console.log('jelloworls');
     
-    }); </script>
-    
+    }); 
+</script> -->
+
+<script>    
+    $('#menu-item-9').on('click', function(e) {
+        $('#menu-item-9').toggleClass("active1");
+      $('.sub-menu').toggleClass("active");
+      e.preventDefault();
+    });
+</script>
+<script>    
+    $('#menu-item-10').on('click', function(e) {
+      $('.sub-menu').toggleClass("active");
+      $('#menu-item-10').toggleClass("active2");
+      e.preventDefault();
+    });
+</script>
+
+
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/animations.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.6.0.min.js"></script>
