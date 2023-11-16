@@ -31,39 +31,29 @@
                     </ul>
                 </div> -->
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-2 col-sm-12 d-lg-block d-none">
-                <ul class="list-unstyled footer-list-ul">
+            <div class="col-xl-3 col-lg-3 col-md-2 col-sm-12 d-lg-block">
+                <!-- <ul class="list-unstyled footer-list-ul"> -->
                     <li class="list-item footer-margin-left">
                         <h4 class="footer-link  footer-heading">
                             Useful Links
                         </h4>
                     </li>
-                    <li>
+                    <?php wp_nav_menu( array('menu' => 'footr_menu', 'container' => '', 'items_wrap' => '<ul class="list-unstyled footer-list-ul">%3$s</ul>' )); ?>
+                   <!--  <li>
                         <a href="#" class="text-decoration-none footer-link-p">
                            Comming Soon
                         </a>
                     </li>
-                    <!-- <li>
-                        <a href="404page.php" class="text-decoration-none footer-link-p">
-                            404 Page
-                        </a>
-                    </li> -->
                     <li>
                         <a href="<?php echo get_site_url() ?>/about-us" class="text-decoration-none footer-link-p">
                             About us
                         </a>
                     </li>
-
-                    <!-- <li>
-                        <a href="faq.html" class="text-decoration-none footer-link-p">
-                            Faq Page
-                        </a>
-                    </li> -->
                     <li>
                         <a href="<?php echo get_site_url() ?>/contact-us" class="text-decoration-none footer-link-p">
                             Contact us
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-12">
@@ -145,9 +135,19 @@
     </div>
     </div>
 </div>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-1.12.1.min.js"></script>
     
-    
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.6.0.min.js"></script>
+    <script src='<?php echo get_template_directory_uri(); ?>/assets/mmenu/mmenu-light.js' id='mmenu-main-js'></script>
+    <script src='<?php echo get_template_directory_uri(); ?>/assets/mmenu/mmenu-light.polyfills.js' id='mmenu-polyfill-js'></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/animations.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/popper.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/custom-script.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.js"></script>
+    <!-- <script src="assets/js/aos.js"></script> -->
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/text-animations.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/carousel.js"></script>
+
     <!-- <script> 
         $(document).ready(function(){
     
@@ -176,17 +176,31 @@
     });
 </script>
 
+<script>
+            document.addEventListener(
+                "DOMContentLoaded", () => {
+                    const menu = new MmenuLight(
+                        document.querySelector( "#menu" ),
+                        "(max-width: 768px)"
+                    );
 
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/animations.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/popper.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/custom-script.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.js"></script>
-    <!-- <script src="assets/js/aos.js"></script> -->
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/text-animations.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/carousel.js"></script>
+                    const navigator = menu.navigation();
+                    const drawer = menu.offcanvas();
 
+                    document.querySelector( "a[href='#menu']" )
+                        .addEventListener( "click", ( evnt ) => {
+                            evnt.preventDefault();
+                            drawer.open();
+                        });
+                }
+            );
+        </script>
+
+    
+
+    
+     
+    
 <?php wp_footer(); ?>
 
 </body>

@@ -681,7 +681,7 @@ display: none;
     position: absolute;
     right: 0px;
     width: 30%;
-    top: 70px;
+    top: 0;
     z-index: 16;
     padding:0;
     background: var(--e-global-color-accent);
@@ -1669,6 +1669,16 @@ h2 {
 .home-header-section .navbar-nav li a:focus-visible {
   outline: 0;
 }
+.mm-menu.mm-offcanvas {
+  position: absolute !important;
+}
+.mm-ocd .mm-ocd__content .collapse:not(.show) {
+  display: block !important;
+}
+.mm-ocd .mm-ocd__content .collapse {
+  width: 100% !important;
+}
+}
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 42px;
@@ -2505,6 +2515,9 @@ h2 {
 .contact-form-section h2 {
   text-align: center;
   margin-bottom: 30px !important;
+}
+.footer-section ul {
+    text-align: center;
 }
 }
 
