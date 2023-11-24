@@ -4,14 +4,18 @@ get_header();
 
  ?>
 <!-- BANNER-SECTION -->
-         <div class="home-banner-section overflow-hidden">
+         <!-- <div class="home-banner-section overflow-hidden">
             <div class="banner-container-box">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 mb-md-0 mb-4 text-lg-left text-center">
                             <div class="home-banner-text"  data-aos="fade-up">
-                                <h1>Welcome to Hamilton Society Housing</h1>
-                                <p class="banner-paragraph">Providing Specialized Housing for Diverse Needs</p>
+                                <h1>
+                                    <?php //echo get_field('banner_heading'); ?>
+                                </h1>
+                                <p class="banner-paragraph">
+<?php //echo get_field('banner_sub-heading'); ?>
+                                </p>
                                 <div class="banner-btn discover-btn-banner">
                                     <a href="tel:610 421 1999
 " class="text-decoration-none">Call Us</a>
@@ -24,12 +28,45 @@ get_header();
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+
+    <section class="home-banner-section">
+        <div class="home-banner">
+            <img src="<?php echo get_field('top_banner_image'); ?>">
+        </div>
+        <div class="home-banner-content">
+        <div class="container">
+                <div class="content">
+                    <h1>
+                        <?php echo get_field('top_banner_heading'); ?>
+                    </h1>
+                    <p><?php echo get_field('top_banner_content'); ?></p>
+
+                    <div class="banner-btn discover-btn-banner">
+                        <a href="tel:<?php echo get_field('phone_number',52); ?>" class="text-decoration-none"><?php echo get_field('top_banner_button'); ?></a>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
 
 <div class="offer-section offer-section1" data-aos="fade-up">
-        <h2>We offer the  <span class="support">best Care</span></h2>
+        <h2>
+            <?php echo get_field('offer_section_heading'); ?>
+            </h2>
         <div class="container">
             <div class="row">
+<?php  
+ $fields = CFS()->get( 'best_care_loop' );
+ if(is_array($fields) || is_object($fields)){
+foreach ( $fields as $field ) {
+
+?>
+
+
+               
+
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3 px-md-1">
                     <div class="offer-section-box">
                         <!-- <div class="offer-section-inner">
@@ -37,69 +74,54 @@ get_header();
                                 <img src="assets/images/offer-section-img1.png" alt="" class="img-fluid">
                             </figure>
                         </div> -->
-                        <h5>Special Needs Housing:</h5>
-                        <p>We offer specialized housing options for individuals with special needs. Our homes are designed to provide a safe and supportive environment for those with physical disabilities, cognitive impairments, developmental disabilities, and chronic illnesses. Our Team of outsourced supportive service providers is available to provide assistance with daily living activities, medical care coordination, and personalized support to enhance the quality of life for our residents.</p>
+                        <h5> <?php echo $field['best_care_heading']; ?></h5>
+                        <p><?php echo $field['best_care_content']; ?></p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3 px-md-1">
+
+            <?php }  } ?>
+               
+               
+
+                <!-- <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3 px-md-1">
                     <div class="offer-section-box">
-                        <!-- <div class="offer-section-inner">
-                            <figure>
-                                <img src="assets/images/offer-section-img2.png" alt="" class="img-fluid">
-                            </figure>
-                        </div> -->
+                        
                         <h5>Transitional Housing:</h5>
                         <p>If you are in need of temporary housing during a transitional period, our transitional housing options are here to support you. Whether you are transitioning from homelessness, leaving a rehabilitation program, or going through a life change, our transitional housing provides a stable and supportive environment to help you regain independence and stability.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3 px-md-1">
                     <div class="offer-section-box">
-                        <!-- <div class="offer-section-inner">
-                            <figure>
-                                <img src="assets/images/offer-section-img3.png" alt="" class="img-fluid">
-                            </figure>
-                        </div> -->
+                        
                         <h5>Veteran Housing:</h5>
                         <p>We proudly offer housing options specifically tailored to meet the unique needs of our veterans. Our veteran housing provides a safe and welcoming environment for those who have served our country. We offer supportive services, including counseling, job placement assistance, and connections to veteran resources, to help veterans successfully reintegrate into civilian life.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3 px-md-1">
                     <div class="offer-section-box">
-                        <!-- <div class="offer-section-inner">
-                            <figure>
-                                <img src="assets/images/offer-section-img3.png" alt="" class="img-fluid">
-                            </figure>
-                        </div> -->
+                        
                         <h5>Group Homes:</h5>
                         <p>Our group homes provide a supportive living environment for individuals who benefit from a communal setting. Whether you have a developmental disability, mental health condition, or other special needs, our group homes offer a sense of community, companionship, and round-the-clock support. Our outsourced service providers ensures that each resident receives individualized care and assistance tailored to their specific needs.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3 px-md-1">
                     <div class="offer-section-box">
-                        <!-- <div class="offer-section-inner">
-                            <figure>
-                                <img src="assets/images/offer-section-img3.png" alt="" class="img-fluid">
-                            </figure>
-                        </div> -->
+                        
                         <h5>Sober Homes:</h5>
                         <p>For individuals in recovery from addiction, our sober homes provide a substance-free and supportive living environment. We create a structured and accountable setting that fosters sobriety, personal growth, and community support. Our sober homes offer a safe and nurturing space as individuals navigate the challenges of early recovery and work towards achieving long-term sobriety.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3 px-md-1">
                     <div class="offer-section-box">
-                        <!-- <div class="offer-section-inner">
-                            <figure>
-                                <img src="assets/images/offer-section-img3.png" alt="" class="img-fluid">
-                            </figure>
-                        </div> -->
+                        
                         <h5>Mental Health Housing:</h5>
                         <p>We recognize the importance of safe and supportive housing for individuals with mental health conditions. Our mental health housing options provide a stigma-free environment where residents can receive the support and resources they need to manage their mental health effectively. We prioritize creating a sense of community and offering therapeutic services to promote overall well-being.</p>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="bottom-text">
-                <h5>And Many More </h5>
+                <h5><?php echo get_field('offer_section_subtitle'); ?></h5>
             </div>
         </div>
         </div>
@@ -108,14 +130,13 @@ get_header();
 
         <section class="icntext-section">
             <div class="bg-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bg.jpg">
+                <img src="<?php echo get_field('foster_care_image'); ?>">
             </div>
             <div class="icntxt-wrapper">
             <div class="container">
                 <div class="icntxt-head">
-                    <h4>Aging Out of Foster Care </h4>
-                    <p style="color:#fff;font-size:22px;text-align:center;">Congratulations on reaching this important milestone in your life. As you transition out of foster care and prepare to embark on your journey into adulthood, we are here to provide you with a safe, supportive, and nurturing environment at Hamilton Society Housing</p>
-                    <p style="color:#fff;font-size:22px;text-align:center;">At Hamilton Society Housing, we understand the unique challenges that come with aging out of foster care. We are committed to providing you with a place to call home, where you can thrive and reach your full potential. Here's what our program offers:</p>
+                    <h4><?php echo get_field('foster_care_heading'); ?></h4>
+                    <?php echo get_field('foster_care_content'); ?>
                 </div>
                 <!-- <div class="row">
                     <div class="col-md-6">
@@ -137,16 +158,12 @@ get_header();
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="right-section">
-                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner6.jpg">
+                   <img src="<?php echo get_field('safe_housing_image'); ?>">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="left-section" data-aos="fade-up">
-                    <h4>Safe and Affordable Housing:</h4>
-                    <p>We provide safe and affordable housing options specifically designed for youth aging out of foster care. Our comfortable  are fully furnished and equipped with all the essentials to ensure you have a comfortable living space. We prioritize your safety and security, and our staff is available 24/7 to address any concerns or emergencies.</p>
-
-                    <h4>Emotional Support and Mentoring:</h4>
-                    <p>We understand that the transition from foster care to independent living can be emotionally challenging. Our program offers access to counseling services and support groups to help you navigate any emotional hurdles you may encounter. Additionally, we provide mentoring programs that connect you with experienced adults who can offer guidance, encouragement, and a listening ear. We believe in the power of a supportive community to help you thrive.</p>
+                    <?php echo get_field('safe_housing_content'); ?>
 
                     <ul class="d-none">
                         <li class=""><i class="fa-solid fa-check ml-0"></i><span class="">Doctor / Nurse home visits</span></li>
@@ -174,65 +191,61 @@ get_header();
     <div class="menu-section">
         <div class="container">
             <div class="menu-heading">
-                <h3 style="text-align: center;color:#000;margin-bottom:50px;">How does HSH work?</h3>
+                <h3><?php echo get_field('menu_section_heading'); ?></h3>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="menu-section-img">
                         <figure>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/menu-section-left-img.png" alt="" class="img-fluid">
+                            <img src="<?php echo get_field('menu_section_image'); ?>" alt="" class="img-fluid">
                         </figure>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="row">
+
+                        <?php  
+ $fields = CFS()->get( 'menu_section_loop' );
+ if(is_array($fields) || is_object($fields)){
+foreach ( $fields as $field ) {
+
+?>
+
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="menu-right-section">
                                 <!-- <figure>
                                     <img src="assets/images/menu-icon1.png" alt="" class="img-fluid">
                                 </figure> -->
-                                <h5>Application Process:</h5>
-                                <p>To be considered for the HSH rental assistance program, interested individuals or families must complete an application form. The application will require personal and financial information to assess eligibility and determine the level of support needed.</p>
+                                <h5><?php echo $field['menu_section_subheading']; ?></h5>
+                                <p><?php echo $field['menu_section_subcontent']; ?></p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
+                        <?php }  } ?>
+
+                        <!-- <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="menu-right-section">
-                                <!-- <figure>
-                                    <img src="assets/images/menu-icon2.png" alt="" class="img-fluid">
-                                </figure> -->
                                 <h5>Eligibility Assessment:</h5>
                                 <p>Our dedicated team will review each application and conduct a thorough eligibility assessment. Factors such as income, family size, and housing needs will be considered to determine the level of rental assistance individuals or families may qualify for.</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div  class="menu-right-section">
-                                <!-- <figure>
-                                    <img src="assets/images/menu-icon3.png" alt="" class="img-fluid">
-                                </figure> -->
                                 <h5>Rental Assistance Allocation:</h5>
                                 <p>Based on the eligibility assessment, approved applicants will receive a predetermined amount of monthly rental assistance. This assistance aims to bridge the gap between the cost of housing and the individual or family's ability to afford it, ensuring that they can secure and maintain stable housing.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div  class="menu-right-section">
-                                <!-- <figure>
-                                    <img src="assets/images/menu-icon4.png" alt="" class="img-fluid">
-                                </figure> -->
                                 <h5>Housing Search and Support:</h5>
                                 <p>We understand that finding suitable housing can be challenging, especially in a competitive market. Our team will work closely with approved applicants to provide guidance and support in their housing search. We will assist in identifying available housing options, connecting with landlords, and navigating the rental process</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div  class="menu-right-section">
-                                <!-- <figure>
-                                    <img src="assets/images/menu-icon4.png" alt="" class="img-fluid">
-                                </figure> -->
                                 <h5>Ongoing Support and Case Management:</h5>
                                 <p>At HSH, our commitment to our participants extends beyond rental assistance. We provide ongoing case management services to ensure that individuals and families are thriving in their homes. Our team is available to offer guidance, resources, and referrals to additional support services that may be beneficial.</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -242,12 +255,12 @@ get_header();
 <section class="form-section">
     <div class="container">
         <div class="frm-heading">
-            <h2>Schedule a Free Consultation</h2>
+            <h2><?php echo get_field('form_section_heading') ?></h2>
         </div>
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="left-section" data-aos="fade-up">
-                    <p style="color:#fff;font-size:22px; text-align: center;">We understand that housing needs are diverse and unique. In addition to the options mentioned above, we offer a wide range of housing solutions to meet various requirements. From low-income housing to those aging out of foster care, from veteran housing to housing for individuals with intellectual disabilities, we strive to provide a comprehensive range of housing options to cater to every individual's unique needs.</p>
+                    <?php echo get_field('form_section_content') ?>
                     
                 </div>
             </div>
@@ -398,8 +411,8 @@ get_header();
 <!-- Pricing-cards-section -->
 <div class="pricing-section">
     <div class="container">
-        <h2 class="text-center pricing-section-heading">How to Join Hamilton Society Housing:</h2>
-        <p class="pricing-title">If you are aging out of foster care and interested in joining our program, we are here to support you. Contact our office or visit our website to learn more about Hamilton Society Housing and request an application. Our dedicated team will guide you through the enrollment process and ensure that you have the resources and support you need to thrive in our community.</p>
+        <h2 class="text-center pricing-section-heading"><?php echo get_field('pricing_section_heading') ?></h2>
+        <?php echo get_field('pricing_section_content') ?>
         <div class="row" data-aos="fade-up">
             <div class="col-lg-6 col-md-6 col-sm-6 mb-sm-3">
                 <div class="pricing-box text-center">
@@ -460,11 +473,10 @@ get_header();
                         <div class="carouse-inner">
                           <div class="carouse-item">
                             <div class="position-relative">
-                                <h2>Contact Us</h2>
-                                <p>If you or a loved one is in need of specialized housing, contact Hamilton Society today. Our experienced team is here to listen, understand your needs, and guide you towards the best housing solution for your situation. We are committed to providing safe, supportive, and all-inclusive housing options that promote independence, dignity, and well-being.</p>
-                                <p>Choose Hamilton Society Housing as your trusted partner in finding the perfect housing solution for your unique needs. Let us help you find a place you can call home.</p>
+                                <h2><?php echo get_field('review_section_heading') ?></h2>
+                                <?php echo get_field('revew_section_content') ?>
                                 <div class="banner-btn discover-btn-banner">
-                                    <a href="tel:610 421 1999" class="text-decoration-none">Call Us</a>
+                                    <a href="tel:<?php echo get_field('phone_number',52); ?>" class="text-decoration-none">Call Us</a>
                                 </div>
                             </div>
                           </div>

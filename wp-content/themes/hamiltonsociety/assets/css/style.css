@@ -2125,7 +2125,7 @@ background: #8bc53b;
 
 .popup-section h4 {
   font-weight: 400;
-  margin-bottom: 4px;
+  margin-bottom: 14px;
 }
 
 .popup-section .popup-btn {
@@ -2601,6 +2601,7 @@ background: #8bc53b;
 
 .sencare-tem-section .service-inner .sencare-team-inner .service-figure-mb {
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .sencare-tem-section .sencare-team-inner ul li {
@@ -3890,7 +3891,7 @@ background: #8bc53b;
 
 
 .benef_sec.offer-section1 .offer-section-box {
-  height: 463px;
+  height: auto;
 }
 .benef_sec p {
   text-align: center;
@@ -4062,3 +4063,72 @@ top: 35px;
   padding: 0 10px;
 }
 
+.menu-section .menu-heading h3 {
+  text-align: center;
+  color:#000;
+  margin-bottom:50px;
+}
+
+
+.touch-section .touch-content h2 {
+  color:#fff;
+}
+
+.care-section .row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+
+
+
+.home-banner-section {
+  position: relative;
+}
+.home-banner-section .home-banner img {
+  width: 100%;
+}
+.home-banner-section .home-banner-content {
+  position: absolute;
+  left: 70px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 50%;
+}
+.home-banner-section .home-banner-content h1 {
+  color: #8bc53b;
+  margin-bottom: 26px;
+}
+.home-banner-section .home-banner-content p {
+      font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    color: #8bc53b;
+    margin-bottom: 31px;
+}
+.home-banner-section .home-banner-content .banner-btn a {
+    color: #fff;
+    font-weight: bold;
+    background: #8bc53b;
+    border-radius: 28px;
+    padding: 16px 37px 16px 37px;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+}
+.home-banner-section .home-banner-content .banner-btn a:hover {
+  color: #000;
+}
+
+.home .header {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.popup-section .phn-no {
+  font-size: 22px;
+}

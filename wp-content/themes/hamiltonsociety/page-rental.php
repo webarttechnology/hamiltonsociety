@@ -30,16 +30,16 @@ get_header();
             <div class="row align-items-center mb-5 shadows">
             <div class="col-md-12">
                 <div class="content">
-                    <p>At HSH, we believe that safe and affordable housing is a fundamental right for all individuals. Our rental assistance program aims to provide support to those in need, ensuring access to quality housing in the vibrant community of Hamilton Society Housing. We understand that financial hardships can often make it challenging to secure and maintain suitable housing, which is why we are committed to assisting individuals and families through our HSH program.</p>
+                    <p><?php echo get_field('rental_top_content') ?></p>
                 </div>
             </div>
         </div>
         <div class="row align-items-center mb-5 shadows">
             <div class="col-md-12">
                 <div class="content">
-                    <h2>How does HSH work?</h2>
-                    
-                    <ul>
+                    <h2><?php echo get_field('hsx_heading'); ?></h2>
+                    <?php echo get_field('hsx_points'); ?>
+                    <!-- <ul>
                         <li>
                             <span>1. Application Process:</span>
                             <p>To be considered for the HSH rental assistance program, interested individuals or families must complete an application form. The application will require personal and financial information to assess eligibility and determine the level of support needed.</p>
@@ -60,7 +60,7 @@ get_header();
                             <span>5. Ongoing Support and Case Management:</span>
                             <p>At HSH, our commitment to our participants extends beyond rental assistance. We provide ongoing case management services to ensure that individuals and families are thriving in their homes. Our team is available to offer guidance, resources, and referrals to additional support services that may be beneficial.</p>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
@@ -71,19 +71,20 @@ get_header();
         <div class="container">
             <div class="col-md-12">
                 <div class="content">
-                    <h3>How to Apply:</h3>
-                    <p>If you are facing financial difficulties and need assistance with rental payments, we encourage you to apply for the HSH rental assistance program. Our application process is designed to be simple and accessible. Visit our website or contact our office to request an application form. Our team will be happy to assist you throughout the application process and answer any questions you may have.</p>
+                    <h3><?php echo get_field('apply_heading'); ?></h3>
+                    <p><?php echo get_field('apply_content'); ?></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="touch-section mt-5" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://sexualharassmentinsurance.com/wp-content/uploads/2022/11/cc.jpg);padding:25px;">
+
+    <section class="touch-section mt-5" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(<?php echo get_field('assistant_programme_image') ?>);padding:25px;">
     <div class="container">
         <div class="touch-content">
-            <h2 style="color:#fff;">Join the HSH Rental Assistance Program:</h2>
-            <p>By joining the HSH rental assistance program, you will be taking a significant step towards securing safe and affordable housing in the Hamilton Society Housing community. Our program is designed to provide a hand-up during challenging times, empowering individuals and families to regain stability and build a brighter future.</p>
-                            <p>Contact us today to learn more about the HSH rental assistance program and how we can support you in your housing journey. Together, we can create a stronger and more inclusive community for all.</p>
+            <h2><?php echo get_field('assistant_programme_heading'); ?></h2>
+            <?php echo get_field('assiatant_programme_content'); ?>
+            
         </div>
     </div>
 </section>

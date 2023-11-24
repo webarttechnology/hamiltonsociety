@@ -675,6 +675,18 @@ display: none;
 .login-form {
   padding: 90px 0;
 }
+
+.home-banner-section .home-banner-content {
+    position: relative;
+    left: 50%;
+    top: unset;
+    transform: translate(-50%, 0);
+    width: 100%;
+}
+.home-banner-section .home-banner-content .content {
+  text-align: center;
+  padding: 25px 0;
+}
 }
 @media only screen and (max-width: 991px) {
   .navbar-collapse {

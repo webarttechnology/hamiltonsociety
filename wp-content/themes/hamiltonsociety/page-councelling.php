@@ -28,27 +28,34 @@ get_header();
 
 <section class="image-text-section py-5">
 	<div class="container">
+		<?php  
+ $fields = CFS()->get( 'counelling_page_loop' );
+ if(is_array($fields) || is_object($fields)){
+foreach ( $fields as $field ) {
+
+?>
 		<div class="row align-items-center mb-5">
 			<div class="col-md-6 mb-4">
 				<div class="image">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner3.jpg">
+					<img src="<?php echo $field['counselling_page_image']; ?>">
 				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="content">
-					<h3>Advocacy and Support</h3>
-					<p>Our knowledgeable team is here to support you every step of the way. We can assist with understanding your benefits, connecting you with community resources, and advocating on your behalf when necessary.</p>
+					<h3><?php echo $field['counselling_page_heading']; ?></h3>
+					<p><?php echo $field['counselling_page_content']; ?></p>
 					<div class="banner-btn discover-btn-banner">
-                                    <a href="tel:610 421 1999" class="text-decoration-none">Call Us</a>
+                                    <a href="tel:<?php echo get_field('phone_number',52); ?>" class="text-decoration-none"><?php echo $field['counselling_page_button']; ?></a>
                                 </div>
 				</div>
 			</div>
 		</div>
+		<?php }  } ?>
 
-		<div class="row align-items-center mb-5">
+		<!-- <div class="row align-items-center mb-5">
 			<div class="col-md-6">
 				<div class="image">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner7.jpg">
+					<img src="<?php //echo get_template_directory_uri(); ?>/assets/images/banner7.jpg">
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -65,7 +72,7 @@ get_header();
 		<div class="row align-items-center">
 			<div class="col-md-6">
 				<div class="image">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/service-offer-left-img.png">
+					<img src="<?php //echo get_template_directory_uri(); ?>/assets/images/service-offer-left-img.png">
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -77,7 +84,11 @@ get_header();
                                 </div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </section>
+
+
+
+<?php get_footer(); ?>
 

@@ -1,0 +1,25 @@
+[24-Nov-2023 05:53:53 UTC] PHP Fatal error:  Uncaught ValueError: setcookie(): "path" option cannot contain ",", ";", " ", "\t", "\r", "\n", "\013", or "\014" in /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php:518
+Stack trace:
+#0 /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php(518): setcookie('wordpress_test_...', 'WP Cookie check', 0, '\n/cms/hamiltons...', '', true)
+#1 {main}
+  thrown in /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php on line 518
+[24-Nov-2023 05:53:55 UTC] PHP Fatal error:  Uncaught ValueError: setcookie(): "path" option cannot contain ",", ";", " ", "\t", "\r", "\n", "\013", or "\014" in /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php:518
+Stack trace:
+#0 /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php(518): setcookie('wordpress_test_...', 'WP Cookie check', 0, '\n/cms/hamiltons...', '', true)
+#1 {main}
+  thrown in /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php on line 518
+[24-Nov-2023 05:53:57 UTC] PHP Fatal error:  Uncaught ValueError: setcookie(): "path" option cannot contain ",", ";", " ", "\t", "\r", "\n", "\013", or "\014" in /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php:518
+Stack trace:
+#0 /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php(518): setcookie('wordpress_test_...', 'WP Cookie check', 0, '\n/cms/hamiltons...', '', true)
+#1 {main}
+  thrown in /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php on line 518
+[24-Nov-2023 05:54:27 UTC] PHP Fatal error:  Uncaught ValueError: setcookie(): "path" option cannot contain ",", ";", " ", "\t", "\r", "\n", "\013", or "\014" in /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php:518
+Stack trace:
+#0 /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php(518): setcookie('wordpress_test_...', 'WP Cookie check', 0, '\n/cms/hamiltons...', '', true)
+#1 {main}
+  thrown in /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php on line 518
+[24-Nov-2023 05:54:29 UTC] PHP Fatal error:  Uncaught ValueError: setcookie(): "path" option cannot contain ",", ";", " ", "\t", "\r", "\n", "\013", or "\014" in /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php:518
+Stack trace:
+#0 /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php(518): setcookie('wordpress_test_...', 'WP Cookie check', 0, '\n/cms/hamiltons...', '', true)
+#1 {main}
+  thrown in /home/webbersunited/public_html/cms/hamiltonsociety/wp-login.php on line 518

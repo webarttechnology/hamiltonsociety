@@ -32,32 +32,37 @@ get_header();
         <div class="row align-items-center mb-5 shadows">
             <div class="col-md-12">
                 <div class="content">
-                    <p>At Hamilton Society Housing, we understand that everyone's housing needs are unique, and we are dedicated to providing specialized housing options for a wide range of individuals. Whether you require special needs housing, transitional housing, veteran housing, group homes, sober homes, mental health housing, aging out of foster care or any other specific housing solution, we are here to help.</p>
+                    <p><?php echo get_field('housing_top_content'); ?></p>
                 </div>
             </div>
         </div>
+<?php  
+ $fields = CFS()->get( 'housing_page_loop' );
+ if(is_array($fields) || is_object($fields)){
+foreach ( $fields as $field ) {
 
+?>
         <div class="row align-items-center mb-5">
             <div class="col-md-6 mb-4">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/careplanhomehealth-min.jpg">
+                    <img src="<?php echo $field['housing_page_image']; ?>">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="content">
-                    <h3>Special Needs Housing:</h3>
-                    <p>We offer specialized housing options for individuals with special needs. Our homes are designed to provide a safe and supportive environment for those with physical disabilities, cognitive impairments, developmental disabilities, and chronic illnesses. Our Team of outsourced supportive service providers is available to provide assistance with daily living activities, medical care coordination, and personalized support to enhance the quality of life for our residents.</p>
+                    <h3><?php echo $field['housing_page_heading']; ?></h3>
+                    <p><?php echo $field['housing_page_content']; ?></p>
                     <div class="banner-btn discover-btn-banner">
-                                    <a href="tel:610 421 1999" class="text-decoration-none">Call Us</a>
+                                    <a href="tel:<?php echo get_field('phone_number',52); ?>" class="text-decoration-none"><?php echo $field['housing_page_button']; ?></a>
                                 </div>
                 </div>
             </div>
         </div>
-
-        <div class="row align-items-center mb-5">
+<?php }  } ?>
+        <!-- <div class="row align-items-center mb-5">
             <div class="col-md-6">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/download-3.jpg">
+                    <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/download-3.jpg">
                 </div>
             </div>
             <div class="col-md-6">
@@ -69,12 +74,12 @@ get_header();
                                 </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="row align-items-center mb-5">
+        <!-- <div class="row align-items-center mb-5">
             <div class="col-md-6 mb-4">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/AdobeStock_243447334-2-scaled.jpeg">
+                    <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/AdobeStock_243447334-2-scaled.jpeg">
                 </div>
             </div>
             <div class="col-md-6">
@@ -86,11 +91,11 @@ get_header();
                                 </div>
                 </div>
             </div>
-        </div>
-        <div class="row align-items-center mb-5">
+        </div> -->
+        <!-- <div class="row align-items-center mb-5">
             <div class="col-md-6 mb-4">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/assisted_living_in_florida.jpg">
+                    <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/assisted_living_in_florida.jpg">
                 </div>
             </div>
             <div class="col-md-6">
@@ -102,38 +107,46 @@ get_header();
                                 </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="row align-items-center py-5 shadows mb-5">
             <div class="col-md-12">
                 <div class="content">
-                    <h3>Sober Homes:</h3>
-                    <p>For individuals in recovery from addiction, our sober homes provide a substance-free and supportive living environment. We create a structured and accountable setting that fosters sobriety, personal growth, and community support. Our sober homes offer a safe and nurturing space as individuals navigate the challenges of early recovery and work towards achieving long-term sobriety.</p>
+                    <h3><?php echo get_field('sobar_home_heading'); ?></h3>
+                    <p><?php echo get_field('sobar_home_content'); ?></p>
                     <div class="banner-btn discover-btn-banner">
-                                    <a href="tel:610 421 1999" class="text-decoration-none">Call Us</a>
+                                    <a href="tel:<?php echo get_field('phone_number',52); ?>" class="text-decoration-none"><?php echo get_field('sobar_home_button'); ?></a>
                                 </div>
                 </div>
             </div>
         </div>
+
+        <?php  
+ $fields = CFS()->get( 'housing_page_loop2' );
+ if(is_array($fields) || is_object($fields)){
+foreach ( $fields as $field ) {
+
+?>
         <div class="row align-items-center mb-5">
             <div class="col-md-6 mb-4">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/2018_3$largeimg12.jpg">
+                    <img src="<?php echo $field['housing_page_image2']; ?>">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="content">
-                    <h3>Mental Health Housing:</h3>
-                    <p>We recognize the importance of safe and supportive housing for individuals with mental health conditions. Our mental health housing options provide a stigma-free environment where residents can receive the support and resources they need to manage their mental health effectively. We prioritize creating a sense of community and offering therapeutic services to promote overall well-being.</p>
+                    <h3><?php echo $field['housing_page_heading2']; ?></h3>
+                    <?php echo $field['housing_page_content2']; ?>
                     <div class="banner-btn discover-btn-banner">
-                                    <a href="tel:610 421 1999" class="text-decoration-none">Call Us</a>
+                                    <a href="tel:<?php echo get_field('phone_number',52); ?>" class="text-decoration-none"><?php echo $field['housing_page_button2']; ?></a>
                                 </div>
                 </div>
             </div>
         </div>
-        <div class="row align-items-center mb-5">
+        <?php }  } ?>
+        <!-- <div class="row align-items-center mb-5">
             <div class="col-md-6 mb-4">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Senior-and-Elderly-Care.jpg">
+                    <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/Senior-and-Elderly-Care.jpg">
                 </div>
             </div>
             <div class="col-md-6">
@@ -146,11 +159,11 @@ get_header();
                                 </div>
                 </div>
             </div>
-        </div>  
-        <div class="row align-items-center mb-5">
+        </div>  --> 
+        <!-- <div class="row align-items-center mb-5">
             <div class="col-md-6 mb-4">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1-1000x675.png">
+                    <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/1-1000x675.png">
                 </div>
             </div>
             <div class="col-md-6">
@@ -162,11 +175,11 @@ get_header();
                                 </div>
                 </div>
             </div>
-        </div> 
-        <div class="row align-items-center mb-5">
+        </div> --> 
+        <!-- <div class="row align-items-center mb-5">
             <div class="col-md-6 mb-4">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/467305389-1024x683.jpg">
+                    <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/467305389-1024x683.jpg">
                 </div>
             </div>
             <div class="col-md-6">
@@ -178,15 +191,14 @@ get_header();
                                 </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="row align-items-center py-5 shadows">
             <div class="col-md-12">
                 <div class="content">
-                    <h3>How to Join Hamilton Society Housing:</h3>
-                    <p>If you are aging out of foster care and interested in joining our program, we are here to support you. Contact our office or visit our website to learn more about Hamilton Society Housing and request an application. Our dedicated team will guide you through the enrollment process and ensure that you have the resources and support you need to thrive in our community.</p>
-                    <p>Remember, you are not alone in this journey. Hamilton Society Housing is here to provide you with a safe and supportive environment as you transition into adulthood. We believe in your potential and are committed to helping you build a bright and successful future. Welcome to Hamilton Society Housing!</p>
+                    <h3><?php echo get_field('join_society_heading'); ?></h3>
+                    <?php echo get_field('join_society_content'); ?>
                     <div class="banner-btn discover-btn-banner">
-                                    <a href="tel:610 421 1999" class="text-decoration-none">Call Us</a>
+                                    <a href="tel:<?php echo get_field('phone_number',52); ?>" class="text-decoration-none"><?php echo get_field('join_society_button'); ?></a>
                                 </div>
                 </div>
             </div>
@@ -199,8 +211,8 @@ get_header();
     <div class="container">
         <div class="col-md-12">
                 <div class="content">
-                    <h3>And Many More:</h3>
-                    <p>We understand that housing needs are diverse and unique. In addition to the options mentioned above, we offer a wide range of housing solutions to meet various requirements. From low-income housing to those aging out of foster care, from veteran housing to housing for individuals with intellectual disabilities, we strive to provide a comprehensive range of housing options to cater to every individual's unique needs.</p>
+                    <h3><?php echo get_field('many_more_heading'); ?></h3>
+                    <p><?php echo get_field('many_more_content'); ?></p>
                 </div>
             </div>
     </div>
@@ -210,9 +222,8 @@ get_header();
     <div class="container">
         <div class="col-md-12">
                 <div class="content">
-                    <h3>Contact Us:</h3>
-                    <p>If you or a loved one is in need of specialized housing, contact Hamilton Society today. Our experienced team is here to listen, understand your needs, and guide you towards the best housing solution for your situation. We are committed to providing safe, supportive, and all-inclusive housing options that promote independence, dignity, and well-being.</p>
-                    <p>Choose Hamilton Society Housing as your trusted partner in finding the perfect housing solution for your unique needs. Let us help you find a place you can call home.</p>
+                    <h3><?php echo get_field('contact_heading'); ?></h3>
+                    <?php echo get_field('contact_content'); ?>
                 </div>
             </div>
     </div>

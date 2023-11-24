@@ -50,7 +50,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="home-header-section">
+<!-- <div class="home-header-section"> -->
      <header class="header">
             <div class="main-header">
                 <div class="container">

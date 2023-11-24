@@ -4,33 +4,17 @@ get_header();
 
  ?>
 
-<!-- BANNER-SECTION -->
-         <div class="home-banner-section overflow-hidden d-none">
-            <div class="banner-container-box">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12 mb-md-0 mb-4 text-lg-left text-center">
-                            <div class="home-banner-text"  data-aos="fade-up">
-                                <h1>Welcome to Hamilton Society</h1>
-                                <p class="banner-paragraph"></p>
-                                <div class="banner-btn discover-btn-banner">
-                                    <a href="tel:610-421-1999" class="text-decoration-none">Call Us</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- offer-section -->
     <div class="offer-section offer-section1 about-offer-section" data-aos="fade-up">
-        <h2 class="offer-heading">We offer you the  <span class="support">best support</span></h2>
+        <h2 class="offer-heading"><?php echo get_field('about_heading'); ?></h2>
        <div class="container">
         <div class="row">
+            <?php  
+ $fields = CFS()->get( 'about_support_loop' );
+ if(is_array($fields) || is_object($fields)){
+foreach ( $fields as $field ) {
+
+?>
             <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
                 <div class="offer-section-box">
                     <!-- <div class="offer-section-inner">
@@ -38,32 +22,23 @@ get_header();
                             <img src="assets/images/offer-section-img1.png" alt="" class="img-fluid">
                         </figure>
                     </div> -->
-                    <h5>We’re here to help</h5>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                    <h5><?php echo $field['about_support_heading']; ?></h5>
+                    <p><?php echo $field['about_support_content']; ?></p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
+<?php }  } ?>
+            <!-- <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
                 <div class="offer-section-box">
-                    <!-- <div class="offer-section-inner">
-                        <figure>
-                            <img src="assets/images/offer-section-img2.png" alt="" class="img-fluid">
-                        </figure>
-                    </div> -->
                     <h5>Our Mission</h5>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
+            </div> -->
+            <!-- <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
                 <div class="offer-section-box">
-                    <!-- <div class="offer-section-inner">
-                        <figure>
-                            <img src="assets/images/offer-section-img3.png" alt="" class="img-fluid">
-                        </figure>
-                    </div> -->
                     <h5>Careers</h5>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
        </div>
     </div>
@@ -72,27 +47,27 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-3">
-                    <h2  data-aos="fade-up">Welcome to Hamilton Society</h2>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h2  data-aos="fade-up"><?php echo get_field('clinical_advice_heading'); ?></h2>
+                    <p><?php echo get_field('clinical_advice_content'); ?></p>
                   <div class="popup-btn">
-                      <a href="#">About us</a>
+                      <a href="tel:<?php echo get_field('phone_number',52); ?>"><?php echo get_field('top_banner_button',5); ?></a>
                   </div>
                   <h4>Need clinical advice?</h4>
-                  <h4 class="popup-section-number">0800 123 45 678</h4>
+                  <a href="tel:<?php echo get_field('phone_number',52); ?>" class="text-decoration-none phn-no"><?php echo get_field('phone_number',52); ?></a>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-12 mb-lg-0 mb-md-0 mb-3">
                     <div class="video-section-box">
                            
-                            <a class="popup-vimeo" href="https://previews.customer.envatousercontent.com/bfa4eae3-5be3-457e-9c5f-31e840d016e5/watermarked_preview/watermarked_preview.mp4">
+                            <a class="popup-vimeo" href="<?php echo get_field('clinical_advice_video_link'); ?>">
                                 <figure class="mb-0">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/popup-video-img.png" style="cursor: pointer" alt="" class="img-fluid video-img">
+                                    <img src="<?php echo get_field('clinical_advice_video_image1'); ?>" style="cursor: pointer" alt="" class="img-fluid video-img">
                                 </figure>
                             </a>
                             <figure class="position-absolute popup-top-figure">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/video-section-top-img.png" alt="" class="img-fluid">
+                                <img src="<?php echo get_field('clinical_advice_video_image2'); ?>" alt="" class="img-fluid">
                             </figure>
                             <figure class="position-absolute popup-bottom-figure">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/video-section-bottom-img.png" alt="" class="img-fluid">
+                                <img src="<?php echo get_field('clinical_advice_video_image3'); ?>" alt="" class="img-fluid">
                             </figure>
                     </div>
                 </div>
@@ -104,13 +79,20 @@ get_header();
         <div class="container">
             <div class="counter-inner-row">
             <div class="row">
+<?php  
+ $fields = CFS()->get( 'counter_loop' );
+ if(is_array($fields) || is_object($fields)){
+foreach ( $fields as $field ) {
+
+?>
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-sm-2">
                         <div class="counter-inner-box vl-border">
-                            <h5><span class="counter">45</span></h5>
-                            <p>Donations Every Year</p>
+                            <h5><?php echo $field['counter_number']; ?></h5>
+                            <p><?php echo $field['counter_text']; ?></p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-sm-2">
+                    <?php }  } ?>
+                    <!-- <div class="col-lg-3 col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-sm-2">
                         <div class="counter-inner-box vl-right-border">
                             <h5><span class="counter">690</span></h5>
                             <p>Great Local Volunteers</p>
@@ -127,7 +109,7 @@ get_header();
                             <h5><span class="counter">170</span></h5>
                             <p>Organized Local Events</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
              </div>
         </div>
@@ -139,31 +121,38 @@ get_header();
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                    <div class="service-offer-content"  data-aos="fade-up">
-                    <h2>Hamilton Society<span class="support">Team</span></h2>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2><?php echo get_field('team_section_heading'); ?></h2>
+                    <p><?php echo get_field('team_section_content'); ?></p>
                    </div>
                     <div class="service-inner">
                         <div class="row">
+                            <?php  
+ $fields = CFS()->get( 'team_section_loop' );
+ if(is_array($fields) || is_object($fields)){
+foreach ( $fields as $field ) {
+
+?>
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                <div class="sencare-team-inner">
                                 <figure class="service-figure-mb">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sencare-team-img1.png" alt="" class="img-fluid">
+                                    <img src="<?php echo $field['team_image']; ?>" alt="" class="img-fluid">
                                 </figure>
-                                <h5>Anthony Joe</h5>
-                                <p>Director of Board</p>
+                                <h5><?php echo $field['team_heading']; ?></h5>
+                                <p><?php echo $field['team_subheading']; ?></p>
                                 <div class="hover_box_plus">
                                     <ul class="p-0 text-center">
-                                        <li><a href="#" class="text-decoration-none"><i class="fa-brands fa-twitter"></i></a></li>
-                                        <li><a href="#" class="text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                        <li><a href="#" class="text-decoration-none"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                        <li><a href="<?php echo $field['team_twitter_url']; ?>" class="text-decoration-none"><?php echo $field['team_icon_twitter']; ?></a></li>
+                                        <li><a href="<?php echo $field['team_facebook_url']; ?>" class="text-decoration-none"><?php echo $field['team_icon_facebook']; ?></a></li>
+                                        <li><a href="<?php echo $field['team_pinterest_url']; ?>" class="text-decoration-none"><?php echo $field['team_icon_pinterest']; ?></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6">
+                        <?php }  } ?>
+                            <!-- <div class="col-lg-3 col-md-3 col-sm-6">
                                 <div class="sencare-team-inner">
                                     <figure class="service-figure-mb">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sencare-team-img2.png" alt="" class="img-fluid">
+                                        <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/sencare-team-img2.png" alt="" class="img-fluid">
                                     </figure>
                                     <h5>John Deo</h5>
                                     <p>Medical Specialis</p>
@@ -179,7 +168,7 @@ get_header();
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                 <div class="sencare-team-inner">
                                     <figure class="service-figure-mb">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sencare-team-img3.png" alt="" class="img-fluid">
+                                        <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/sencare-team-img3.png" alt="" class="img-fluid">
                                     </figure>
                                     <h5>Rickey Martin</h5>
                                     <p>Medical Consultant</p>
@@ -195,7 +184,7 @@ get_header();
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                 <div class="sencare-team-inner">
                                     <figure class="service-figure-mb">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sencare-team-img4.png" alt="" class="img-fluid">
+                                        <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/sencare-team-img4.png" alt="" class="img-fluid">
                                     </figure>
                                     <h5>Anna Clark</h5>
                                     <p class="mb-0">House Nurse</p>
@@ -207,7 +196,7 @@ get_header();
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -218,6 +207,12 @@ get_header();
 <section class="happy-clients-section happy-clients-section2 happy-clients-section3">
     <div class="container">
         <div class="row">
+            <?php  
+ $fields = CFS()->get( 'happy_clients_loop' );
+ if(is_array($fields) || is_object($fields)){
+foreach ( $fields as $field ) {
+
+?>
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div id="demo" class="carousel slide" data-ride="carousel">
                 <div class="review-section-outer position-relative">
@@ -225,17 +220,18 @@ get_header();
                     <!-- The slideshow -->
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                          <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/happy-clients-section-img2.png" alt="" class="img-fluid"></figure>
-                        <h4 class="carousel-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident deserunt mollit anim id est laborum.</h4>
+                          <figure><img src="<?php echo $field['happy_client_image']; ?>" alt="" class="img-fluid"></figure>
+                        <h4 class="carousel-text"><?php echo $field['happy_client_content']; ?></h4>
                         <div class="about-border"></div>
-                       <h4 class="carousel-title">Michel Barnier</h4>
-                       <p class="carousel-end-text">Senior Advisor</p>
+                       <h4 class="carousel-title"><?php echo $field['happy_client_subheading']; ?></h4>
+                       <p class="carousel-end-text"><?php echo $field['happy_client_subtitle']; ?></p>
                       </div>
                     </div>
                   </div>
                 </div>
                 </div>
             </div> 
+<?php }  } ?>
         </div>
     </div>
 </section> 

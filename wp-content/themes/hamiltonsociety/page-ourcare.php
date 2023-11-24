@@ -32,42 +32,26 @@ get_header();
         <div class="row align-items-center">
             <div class="col-md-6 mb-4">
                 <div class="lft-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner1.jpeg">
+                    <img src="<?php echo get_field('our_care_image'); ?>">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="content">
-                    <p>All of our residential care homes are specifically designed to provide housing and related services for each particular demographic. Because of that, our residents have access to a wide variety of services provided by outsourced 3rd parties. These include:</p>
-                    <ul>
-                        <li><i class="fa-solid fa-check ml-0"></i><span>Doctor / Nurse home visits</span></li>
-                        <li><i class="fa-solid fa-check ml-0"></i><span>Home health services</span></li>
-                        <li><i class="fa-solid fa-check ml-0"></i><span>Hospice</span></li>
-                        <li><i class="fa-solid fa-check ml-0"></i><span>Durable medical equipment</span></li>
-                        <li><i class="fa-solid fa-check ml-0"></i><span>Case management</span></li>
-                        <li><i class="fa-solid fa-check ml-0"></i><span>Social work</span></li>
-                        <li><i class="fa-solid fa-check ml-0"></i><span>Behavioral counseling and therapy</span></li>
-                        <li><i class="fa-solid fa-check ml-0"></i><span>Medication management</span></li>
-                        <li><i class="fa-solid fa-check ml-0"></i><span>Many additional services</span></li>
-                    </ul>
-                    <p>In addition to the services provided by our outsourced 3rd parties; we also offer a wide range of services included in our flat monthly fee. These services include, but are not limited to:</p>
-                    <ul>
-                <li><i class="fa-solid fa-check ml-0"></i><span>Linens</span></li>
-                <li><i class="fa-solid fa-check ml-0"></i><span>Washer & Dryer</span></li>
-                <li><i class="fa-solid fa-check ml-0"></i><span>Personal Television</span></li>
-                <li><i class="fa-solid fa-check ml-0"></i><span>Telephone</span></li>
-                <li><i class="fa-solid fa-check ml-0"></i><span>All bills paid utilities</span></li>
-            </ul>
+                    <p><?php echo get_field('our_care_content'); ?></p>
+                    <?php echo get_field('our_care_point'); ?>
+                    <p><?php echo get_field('our_care_content2'); ?></p>
+                    <?php echo get_field('our_care_point2'); ?>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="touch-section py-5" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://sexualharassmentinsurance.com/wp-content/uploads/2022/11/cc.jpg)">
+<section class="touch-section py-5" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(<?php echo get_field('touch_section_image'); ?>)">
     <div class="container">
         <div class="touch-content">
-            <h4>Keep in Touch</h4>
-            <a href="mailto:twannhamilton@gmail.com">support@hamiltonsocietyhousing.org</a>
+            <h4><?php echo get_field('touch_section_heading'); ?></h4>
+            <a href="mailto:<?php echo get_field('email',52); ?>">support@hamiltonsocietyhousing.org</a>
             <p>610-421-1999</p>
         </div>
     </div>

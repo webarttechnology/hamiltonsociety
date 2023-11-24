@@ -30,27 +30,33 @@ get_header();
 
 <section class="image-text-section py-5">
     <div class="container">
+        <?php  
+ $fields = CFS()->get( 'education_page_loop' );
+ if(is_array($fields) || is_object($fields)){
+foreach ( $fields as $field ) {
+
+?>
         <div class="row align-items-center mb-5">
             <div class="col-md-6 mb-4">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ed1.jpg">
+                    <img src="<?php echo $field['education_page_image']; ?>">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="content">
-                    <h3>Empowerment and Education</h3>
-                    <p>We believe in empowering our beneficiaries to gain financial independence. Through financial literacy programs and personalized guidance, we aim to equip you with the skills and knowledge to manage your own finances when the time is right.</p>
+                    <h3><?php echo $field['education_page_heading']; ?></h3>
+                    <p><?php echo $field['education_page_content']; ?></p>
                     <div class="banner-btn discover-btn-banner">
-                                    <a href="tel:610 421 1999" class="text-decoration-none">Call Us</a>
+                                    <a href="tel:<?php echo get_field('phone_number',52); ?>" class="text-decoration-none"><?php echo $field['education_page_button']; ?></a>
                                 </div>
                 </div>
             </div>
         </div>
-
-        <div class="row align-items-center mb-5">
+        <?php }  } ?>
+        <!-- <div class="row align-items-center mb-5">
             <div class="col-md-6 mb-4">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ed2.jpg">
+                    <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/ed2.jpg">
                 </div>
             </div>
             <div class="col-md-6">
@@ -64,7 +70,7 @@ get_header();
                                 </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 
