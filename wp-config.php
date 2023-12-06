@@ -20,13 +20,15 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'webbersunited_hamilton_db' );
+define( 'DB_NAME', 'hamilton_db' );
 
 /** Database username */
-define( 'DB_USER', 'webbersunited_hamilton_db' );
+// define( 'DB_USER', 'webbersunited_hamilton_db' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', '1*eDo^O)HWpu' );
+// define( 'DB_PASSWORD', '1*eDo^O)HWpu' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );

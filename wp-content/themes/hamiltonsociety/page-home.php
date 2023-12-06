@@ -416,48 +416,46 @@ foreach ( $fields as $field ) {
         <div class="row" data-aos="fade-up">
             <div class="col-lg-6 col-md-6 col-sm-6 mb-sm-3">
                 <div class="pricing-box text-center">
-                    <h5>One Beds</h5>
-                    <h2 class="pricing-text"><sup>$</sup>500</h2>
-                </div>
-                <div class="pricing-box-bottom">
-                    <ul class="list-unstyled pricing-section-list">
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Baking.png"><span>Baking Classes</span>  </li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bingo.png"><span>Bingo</span></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/donation.png"><span>Donation Drives</span></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/music-therapy.png"><span>Happy Hours</span></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/ice-cream.png"><span>
-                    Ice Cream</span></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bible.png"><span>Mass Services</span></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/music-therapy.png"><span>Music Therapy</span></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/animal-therapy.png"><span>Pet Therapy</span></li>
-                    </ul>
-                    <div class="banner-btn discover-btn-banner">
-                        <a href="about.html" class="text-decoration-none">Buy Now</a>
-                    </div>
+                    <h5><?php echo get_field('price_subheading') ?></h5>
+                    <h2 class="pricing-text"><?php echo get_field('double_room_price') ?></h2>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="pricing-box text-center">
-                    <h5>Two Beds</h5>
-                    <h2 class="pricing-text"><sup>$</sup>1000</h2>
+                    <h5><?php echo get_field('price_subheading2') ?></h5>
+                    <h2 class="pricing-text"><?php echo get_field('single_room_price') ?></h2>
                 </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="pricing-box-bottom">
                     <ul class="list-unstyled pricing-section-list">
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/ice-cream.png"><span>
-                    Ice Cream</span></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bible.png"><span>Mass Services</span></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/music-therapy.png"><span>Music Therapy</span></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/animal-therapy.png"><span>Pet Therapy</span></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Baking.png"><span>Baking Classes</span>  </li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bingo.png"><span>Bingo</span></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/donation.png"><span>Donation Drives</span></li>
-                    <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/music-therapy.png"><span>Happy Hours</span></li>
+                        <?php  
+ $fields = CFS()->get( 'price_section_loop' );
+ if(is_array($fields) || is_object($fields)){
+foreach ( $fields as $field ) {
+
+?>
+                    <li><img src="<?php echo $field['price_section_image']; ?>"><span><?php echo $field['price_section_content']; ?></span></li>
+<?php }  } ?>
+
+                    <!-- <li><img src="<?php //echo get_template_directory_uri(); ?>/assets/images/bingo.png"><span>Group Home Housing</span></li>
+                    <li><img src="<?php //echo get_template_directory_uri(); ?>/assets/images/donation.png"><span>Sober Home</span></li>
+                    <li><img src="<?php //echo get_template_directory_uri(); ?>/assets/images/music-therapy.png"><span>Mental Health Housing</span></li>
+                    <li><img src="<?php //echo get_template_directory_uri(); ?>/assets/images/ice-cream.png"><span>
+                    Aging Out of Foster Care Housing</span></li>
+                    <li><img src="<?php //echo get_template_directory_uri(); ?>/assets/images/bible.png"><span>Affordable Housing</span></li>
+                    <li><img src="<?php //echo get_template_directory_uri(); ?>/assets/images/music-therapy.png"><span>Transitional Housing</span></li>
+                    <li><img src="<?php //echo get_template_directory_uri(); ?>/assets/images/animal-therapy.png"><span>Emergency Housing</span></li>
+                    <li><img src="<?php //echo get_template_directory_uri(); ?>/assets/images/animal-therapy.png"><span>Veteran Housing</span></li>
+                    <li><img src="<?php //echo get_template_directory_uri(); ?>/assets/images/animal-therapy.png"><span>Social Security Income Housing</span></li>
+                    <li><img src="<?php //echo get_template_directory_uri(); ?>/assets/images/animal-therapy.png"><span>Government Income Housing</span></li> -->
                     </ul>
                     <div class="banner-btn discover-btn-banner">
                         <a href="about.html" class="text-decoration-none">Buy Now</a>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>

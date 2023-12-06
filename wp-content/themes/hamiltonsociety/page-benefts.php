@@ -72,72 +72,59 @@ get_header();
         <p><?php echo get_field('help_section_content') ?></p>
         <div class="container">
             <div class="row justify-content-center">
-                <?php  
- $fields = CFS()->get( 'help_section_loop' );
- if(is_array($fields) || is_object($fields)){
-foreach ( $fields as $field ) {
+                
+                
 
-?>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3 px-md-1 py-4">
-                    <div class="offer-section-box">
-                        <!-- <div class="offer-section-inner">
-                            <figure>
-                                <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/offer-section-img1.png" alt="" class="img-fluid">
-                            </figure>
-                        </div> -->
-                        <h5><?php echo $field['help_section_heading']; ?></h5>
-                        <p><?php echo $field['help_section_content']; ?></p>
-                    </div>
-                </div>
-                <?php }  } ?>
-                <!-- <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3 px-md-1 py-4">
-                    <div class="offer-section-box">
-                        <div class="offer-section-inner">
-                            <figure>
-                                <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/offer-section-img2.png" alt="" class="img-fluid">
-                            </figure>
-                        </div>
-                        <h5>Budgeting and Bill Payment: </h5>
-                        <p>We develop personalized budgets based on your income and expenses, ensuring that bills are paid promptly and that you have enough funds for your day-to-day needs.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3 px-md-1 py-4">
-                    <div class="offer-section-box">
-                        <div class="offer-section-inner">
-                            <figure>
-                                <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/offer-section-img3.png" alt="" class="img-fluid">
-                            </figure>
-                        </div>
-                        <h5>Financial Reporting: </h5>
-                        <p>We provide regular, detailed reports to you and the SSA, documenting the management of your funds, expenditures, and any changes in your financial situation.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3 px-md-1 py-4">
-                    <div class="offer-section-box">
-                        <div class="offer-section-inner">
-                            <figure>
-                                <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/offer-section-img3.png" alt="" class="img-fluid">
-                            </figure>
-                        </div>
-                        <h5>Advocacy and Support: </h5>
-                        <p>Our knowledgeable team is here to support you every step of the way. We can assist with understanding your benefits, connecting you with community resources, and advocating on your behalf when necessary.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3 px-md-1 py-4">
-                    <div class="offer-section-box">
-                        <div class="offer-section-inner">
-                            <figure>
-                                <img src="<?php //echo get_template_directory_uri(); ?>/assets/images/offer-section-img3.png" alt="" class="img-fluid">
-                            </figure>
-                        </div>
-                        <h5>Empowerment and Education: </h5>
-                        <p>We believe in empowering our beneficiaries to gain financial independence. Through financial literacy programs and personalized guidance, we aim to equip you with the skills and knowledge to manage your own finances when the time is right.</p>
-                    </div>
-                </div> -->
+
+<div class="content">
+      <!-- Tab links -->
+      <div class="tabs">
+         <button class="tablinks active" data-country="financial"><p data-title="financial"><?php echo get_field('tab_title1') ?></p></button>
+         <button class="tablinks" data-country="protection"><p data-title="protection"><?php echo get_field('tab_title2') ?></p></button>
+         <button class="tablinks" data-country="accountability"><p data-title="accountability"><?php echo get_field('tab_title3') ?></p></button>
+         <button class="tablinks" data-country="access"><p data-title="access"><?php echo get_field('tab_title4') ?></p></button>
+         <button class="tablinks" data-country="reduced"><p data-title="reduced"><?php echo get_field('tab_title5') ?></p></button>
+      </div>
+
+      <!-- Tab content -->
+      <div class="wrapper_tabcontent">
+         <div id="financial" class="tabcontent active">
+            <p><?php echo get_field('tab_content1') ?></p>
+         </div>
+
+         <div id="protection" class="tabcontent">
+            <p><?php echo get_field('tab_content2') ?></p>
+         </div>
+
+         <div id="accountability" class="tabcontent">
+            <p><?php echo get_field('tab_content3') ?></p>
+         </div>
+
+         <div id="access" class="tabcontent">
+            <p><?php echo get_field('tab_content4') ?></p>
+         </div>
+
+         <div id="reduced" class="tabcontent">
+            <p><?php echo get_field('tab_content5') ?></p>
+         </div>
+      </div>
+   </div>
+
+                
             </div>
         </div>
         </div>
         </section>
+
+
+
+
+
+   
+
+
+
+
 
         <section class="success-section mb-5 d-none">
         	<div class="container">

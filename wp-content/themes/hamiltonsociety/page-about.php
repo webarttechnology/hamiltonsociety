@@ -5,7 +5,7 @@ get_header();
  ?>
 
     <!-- offer-section -->
-    <div class="offer-section offer-section1 about-offer-section" data-aos="fade-up">
+    <div class="offer-section offer-section1 about-offer-section d-none" data-aos="fade-up">
         <h2 class="offer-heading"><?php echo get_field('about_heading'); ?></h2>
        <div class="container">
         <div class="row">
@@ -43,7 +43,7 @@ foreach ( $fields as $field ) {
        </div>
     </div>
     <!-- Popup-Section -->
-    <div class="offer-section popup-section position-relative">
+    <div class="offer-section popup-section position-relative d-none">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-lg-0 mb-md-0 mb-3">
@@ -75,7 +75,7 @@ foreach ( $fields as $field ) {
         </div>           
     </div>
     <!-- Counter-Section -->
-    <div class="counter-section2">
+    <div class="counter-section2 d-none">
         <div class="container">
             <div class="counter-inner-row">
             <div class="row">
@@ -114,6 +114,44 @@ foreach ( $fields as $field ) {
              </div>
         </div>
     </div>  
+<div class="aboutus pt-4">
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-12">
+				<div class="about-content">
+					<h1>
+						ABOUT US
+					</h1>
+					<h3>
+						Our Mission
+					</h3>
+					<h2>
+						Welcome to Hamilton Society Housing!
+					</h2>
+					<p class="pt-4">
+						Our mission is to provide affordable and inclusive housing options to individuals and families in the Hamilton Society community. We understand the importance of having a safe and comfortable place to call home, regardless of income or circumstances.
+					</p>
+					<p>
+						At Hamilton Society Housing, we offer a range of housing options to meet the diverse needs of our residents. Our low-income housing program aims to provide affordable housing to individuals and families who may be facing financial challenges. We believe that everyone deserves a chance to live in a quality home, and we strive to create a supportive and inclusive community for our residents.
+					</p>
+					<p>
+						For those seeking single room or double room occupancy, we have a variety of options available. Whether you are transitioning from being homeless or aging out of foster care or a veteran seeking a home our housing options cater to your needs. We ensure that all our rooms are well-maintained, comfortable, and equipped with essential amenities.
+					</p>
+					<p>
+						In addition to providing housing, we understand the importance of access to supportive social services. We offer a range of support programs to assist our residents in their personal and professional development. These services may include career counseling, life skills workshops, financial literacy programs, and access to community resources. Our goal is to empower our residents and help them thrive in all aspects of their lives.
+					</p>
+					<p>
+						Hamilton Society Housing is committed to fostering a sense of community and belonging. We believe that everyone deserves a safe and supportive environment to grow and flourish. Our dedicated team is here to assist you throughout your stay, ensuring that your housing experience is positive and fulfilling.
+					</p>
+					<p>
+						Join us at Hamilton Society Housing and discover a place where affordability meets quality, and where support services are readily available. We invite you to explore our website and learn more about the housing options and services we provide. Together, let's create a community where everyone has a place to call home.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 
     <!-- Service-Offer-Section -->
   <div class="service-offer-section service-offer-section2 sencare-tem-section">

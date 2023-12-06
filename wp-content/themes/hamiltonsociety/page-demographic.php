@@ -24,7 +24,22 @@ get_header();
             </div>
         </div>
     </div>
-
+<section class="we-serve">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="serve-content text-center pt-4">
+				<h2>
+					DEMOGRAPHIC WE SERVE
+				</h2>
+				<p>
+					Welcome to Hamilton Society Housing, where we strive to provide affordable and inclusive housing options for individuals receiving government assistance such as Supplemental Security Income (SSI), Social Security Disability (SSD), or other forms of government support. We understand the importance of having a safe and comfortable place to call home, and our mission is to ensure that all residents have equal access to quality housing.
+				</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
 <section class="care-section py-5">
     <div class="container">
 
@@ -42,8 +57,8 @@ foreach ( $fields as $field ) {
             </div>
             <div class="col-md-6">
                 <div class="content">
+					<h4><?php echo $field['demographic_subheading']; ?></h4>
                     <?php echo $field['demographic_content']; ?>
-                    <h4><?php echo $field['demographic_subheading']; ?></h4>
                     <div class="banner-btn discover-btn-banner">
                                     <a href="tel:<?php echo get_field('phone_number',52); ?>" class="text-decoration-none"><?php echo $field['demographic_button']; ?></a>
                                 </div>
