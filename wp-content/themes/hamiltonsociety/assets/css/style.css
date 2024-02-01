@@ -4019,6 +4019,7 @@ background: #8bc53b;
 }
 .home .header .navbar .navbar-nav .nav-link .sub-menu .menu-item a {
   color: #000;
+	display: block;
 }
 .home .header .navbar .navbar-nav .nav-link .sub-menu .menu-item:hover a {
   color: #fff;
@@ -4061,6 +4062,7 @@ top: 35px;
 }
 .header .navbar .navbar-nav .nav-link .sub-menu li a {
   padding: 0 10px;
+	display: block;
 }
 
 .menu-section .menu-heading h3 {
@@ -4187,8 +4189,7 @@ top: 35px;
 }
 /* Tab Links */
 .tablinks {
-  background: transparent;
-  background-image: linear-gradient(90deg, transparent 70%, rgba(255, 255, 255, 0.2) 100%);
+  background: #8bc53b;
   border: none;
   outline: none;
   cursor: pointer;
@@ -4203,6 +4204,7 @@ top: 35px;
   font-family: "IBM Plex Sans", sans-serif;
   overflow: hidden;
   transition: 0.3s ease;
+	color: #fff;
 }
 @media screen and (max-width: 512px) {
   .tablinks {
@@ -4246,6 +4248,12 @@ top: 35px;
 /*  height: 110px;*/
   bottom: 0px;
   overflow: hidden;
+	border: 1px solid #8bc53b;
+}
+.tablinks.active:focus,
+.tablinks.active:focus-visible
+{
+	border: 1px solid #8bc53b;
 }
 @media screen and (max-width: 512px) {
   .tablinks.active {
@@ -4262,12 +4270,12 @@ top: 35px;
 /* Tabs text */
 .tablinks.active p, .tablinks.active:hover p {
   opacity: 1;
-  background: -webkit-linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #8bc53b;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .tablinks p {
-  opacity: 0.6;
+  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4275,7 +4283,7 @@ top: 35px;
   transition: 0.5s ease;
   padding: 0;
   margin: 0;
-  color: #686868;
+  color: #fff;
   backface-visibility: hidden;
   font-weight: 400;
 }
@@ -4350,7 +4358,7 @@ top: 35px;
   height: 5px;
   width: 100%;
   position: absolute;
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #8bc53b;
   left: 0;
   bottom: 0;
   z-index: -2;
@@ -4413,6 +4421,11 @@ top: 35px;
     opacity: 1;
     margin-left: 0;
   }
+}
+
+
+.pricing-box-bottom i {
+	color: #b68119;
 }
 
 

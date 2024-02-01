@@ -435,7 +435,7 @@ foreach ( $fields as $field ) {
 foreach ( $fields as $field ) {
 
 ?>
-                    <li><img src="<?php echo $field['price_section_image']; ?>"><span><?php echo $field['price_section_content']; ?></span></li>
+						<li><span><?php echo $field['price_section_image']; ?></span><span><?php echo $field['price_section_content']; ?></span></li>
 <?php }  } ?>
 
                     <!-- <li><img src="<?php //echo get_template_directory_uri(); ?>/assets/images/bingo.png"><span>Group Home Housing</span></li>
@@ -451,7 +451,7 @@ foreach ( $fields as $field ) {
                     <li><img src="<?php //echo get_template_directory_uri(); ?>/assets/images/animal-therapy.png"><span>Government Income Housing</span></li> -->
                     </ul>
                     <div class="banner-btn discover-btn-banner">
-                        <a href="about.html" class="text-decoration-none">Buy Now</a>
+                        <a href="tel:610-421-1999" class="text-decoration-none">Call Us</a>
                     </div>
                 </div>
             </div>

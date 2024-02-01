@@ -177,24 +177,24 @@
 </script>
 
 <script>
-            document.addEventListener(
-                "DOMContentLoaded", () => {
-                    const menu = new MmenuLight(
-                        document.querySelector( "#menu" ),
-                        "(max-width: 768px)"
-                    );
+    document.addEventListener(
+    "DOMContentLoaded", () => {
+    const menu = new MmenuLight(
+        document.querySelector( "#menu" ),
+        "(max-width: 768px)"
+    );
 
-                    const navigator = menu.navigation();
-                    const drawer = menu.offcanvas();
+    const navigator = menu.navigation();
+    const drawer = menu.offcanvas();
 
-                    document.querySelector( "a[href='#menu']" )
-                        .addEventListener( "click", ( evnt ) => {
-                            evnt.preventDefault();
-                            drawer.open();
-                        });
-                }
-            );
-        </script>
+    document.querySelector( "a[href='#menu']" )
+        .addEventListener( "click", ( evnt ) => {
+            evnt.preventDefault();
+            drawer.open();
+            });
+        }
+    );
+</script>
 
 
         <script>

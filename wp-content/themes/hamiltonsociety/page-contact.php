@@ -35,13 +35,13 @@ get_header();
             <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
                 <div class="offer-section-box">
                     <h5>Address</h5>
-                    <p>Envato Pty Ltd, 121 King Street</p>
+                    <p>926 N 7th Street Allentown, PA 18102</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
                 <div class="offer-section-box">
                     <h5>Phone</h5>
-                    <p>718 974 4993</p>
+                    <p>610 421 1999</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-0">

@@ -20,15 +20,15 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'hamilton_db' );
+define( 'DB_NAME', 'u781078481_hamiltonsociet' );
 
 /** Database username */
 // define( 'DB_USER', 'webbersunited_hamilton_db' );
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'u781078481_hamiltonsociet' );
 
 /** Database password */
 // define( 'DB_PASSWORD', '1*eDo^O)HWpu' );
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'JP]hSk>v2' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -81,7 +81,7 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', true );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
